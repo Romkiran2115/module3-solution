@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Assignment</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <style>
+    /* Add your custom styles here */
+    .navbar-mobile {
+      background-color: #999999; /* Change to your desired background color */
+    }
+    .section {
+      height: 1000px;
+      /*background-color: #f2f2f2; Change to your desired background color */
+      margin-top: 20px; /* Adjust margin as needed */
+      padding: 20px; /* Add padding as needed */
+    }
+    .item{
+  position: relative;
+  top: 0;
+  background-color:#999999;
+  margin: 15px;
+  padding: 25px;
+  border: 3px solid #000;
+}
+h3 {
+    font-size: 30px;
+    font-variant: full-width;
+    text-align: center;
+  }
+
+.navbar-default .navbar-toggle {
+    border-color: #000;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #000;
+}
+.navbar-default .navbar-brand {
+    color: black;
+    font-size: x-large;
+}
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default navbar-mobile">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button> 
+      <a class="navbar-brand visible-xs" href="#">Food, LLC</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Chicken</a></li>
+        <li><a href="#">Beef</a></li>
+        <li><a href="#">Sushi</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<!-- Page Heading -->
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 text-center">
+      <h1>Our Menu</h1>
+    </div>
+  </div>
+</div>
+
+<!-- Tall Section -->
+<div class="container section">
+  <div class="row">
+    <div class="col-xs-12">
+      <!-- Add your content here -->
+      <!-- Example: -->
+     <div class="item">
+      <div class="item-title" id="title-one">
+    <h3>Chicken</h3>
+  </div>
+  <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </p>
+    </div> 
+  </div>
+    <div class="col-xs-12"> 
+    <div class="item">
+      <div class="item-title" id="title-two">
+      <h3>Beef</h3>
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </p>
+    </div>
+   </div>
+ 
+    <div class="col-xs-12"> 
+      <div class="item">
+    <div class="item-title" id="title-three">
+      <h3>Sushi</h3>
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+ </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+  <!-- jQuery and Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- Script for scrolling navbar -->
+  <script>
+    $(window).scroll(function() {
+      if ($(this).scrollTop() > 50) {
+        $('.navbar-fixed-top').addClass('scrolled');
+      } else {
+        $('.navbar-fixed-top').removeClass('scrolled');
+      }
+    });
+  </script>
+
+</body>
